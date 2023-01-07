@@ -8,17 +8,22 @@
     <link rel="stylesheet" href="./reset.css">
     <title>TODO</title>
 </head>
-<body class="body">
+<body>
+    <form class="todo" id="form">
+        <div class="todo__wrapper">
+            <input class="input" id="input" type="text" placeholder="Введите текст задачи">
     
-    <input type="text" placeholder="Введите текст задачи">
-
-    <button id="btn">Отправить</button>
-    <ul id="tasks">
-        <li class="task">
-            <p class="task__text">task text</p>
-            <button id="btnDelete">Delete</button>
-        </li>
-    </ul>
+            <button data-btn="add" class="btn" id="btn">Отправить</button>
+            <ul id="tasks">
+                <li class="task">
+                    <p class="task__text">task text</p>
+                    <button class="btnDel" id="btnDelete">Delete Task</button>
+                </li>
+            </ul>
+        </div>
+    </form>
+    
+    
     <script src="./main.js"></script>
 </body>
 </html>

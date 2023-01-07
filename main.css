@@ -1,7 +1,42 @@
+button {
+   cursor: pointer;
+}
+
+.todo {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 200px;
+}
+.input {
+   font-size: 18px;
+   color: black;
+   
+}
+.todo__wropper {
+
+}
+.btn {
+   background-color: yellow;
+   border: none;
+   font-size: 20px;
+}
 #tasks {
    max-width: 500px;
+   margin-top: 20px;
 }
 .task {
    display: flex;
    justify-content: space-between;
+}
+.task__text {
+   font-size: 20px;
+}
+.btnDel {
+   background-color: red;
+   border: none;
+   font-size: 20px;
+}
+.task + .task {
+   margin-top: 20px;
 }
