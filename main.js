@@ -5,6 +5,7 @@ const form = document.querySelector("#form")
 const taskWrapper = document.querySelector("#tasks")
 
 form.addEventListener("click", addTask)
+form.addEventListener("click", deleteTask)
 
 function addTask(e) {
     e.preventDefault()
@@ -12,7 +13,7 @@ function addTask(e) {
     const htmlTask = `
     <li class="task">
         <p class="task__text">${input.value}</p>
-        <button class="btnDel" id="btnDelete">Delete Task</button>
+        <button data-del="del" class="btnDel" id="btnDelete">Delete Task</button>
     </li>`
     if(correctBtn) {
         if(input.value) {
@@ -21,9 +22,16 @@ function addTask(e) {
             clearInput()
             input.focus()
         }
-        else {
-            console.log(false)
-        }
+    }
+}
+
+function deleteTask(e) {
+    e.preventDefault()
+    const btn = e.target
+    const correctBtnDel = e.target.dataset.del;
+    const task = btn.parentNode;
+    if(correctBtnDel) {
+        task.remove()
     }
 }
 function clearInput() {
