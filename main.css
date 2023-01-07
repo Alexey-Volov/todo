@@ -13,6 +13,11 @@ button {
    align-items: center;
 
 }
+.todo__title {
+   color: white;
+   font-size: 72px;
+   text-align: center;
+}
 .input {
    font-size: 18px;
    color: black;
@@ -31,6 +36,7 @@ button {
    font-size: 20px;
    padding: 10px;
    border-radius: 25px;
+   color: black;
 }
 #tasks {
    max-width: 500px;
@@ -51,4 +57,10 @@ button {
 }
 .task + .task {
    margin-top: 20px;
+}
+
+@media(max-width: 992px) {
+   .todo__title {
+      font-size: 36px;
+   }
 }
