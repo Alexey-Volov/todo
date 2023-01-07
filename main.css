@@ -1,25 +1,36 @@
 button {
    cursor: pointer;
 }
-
+.bg {
+   background-image: url("./img/1.gif");
+   background-size: cover;
+   height: 1080px;
+}
 .todo {
+   padding-top: 200px;
    display: flex;
    justify-content: center;
    align-items: center;
-   margin-top: 200px;
+
 }
 .input {
    font-size: 18px;
    color: black;
-   
+   opacity: 0.3;
+   padding: 10px;
+   border-radius: 50px;
+   border: none;
 }
 .todo__wropper {
 
 }
 .btn {
+   display: inline-block;
    background-color: yellow;
    border: none;
    font-size: 20px;
+   padding: 10px;
+   border-radius: 25px;
 }
 #tasks {
    max-width: 500px;
@@ -31,6 +42,7 @@ button {
 }
 .task__text {
    font-size: 20px;
+   color: white;
 }
 .btnDel {
    background-color: red;

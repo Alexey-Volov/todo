@@ -21,10 +21,11 @@ function addTask(e) {
             console.log(true)
             clearInput()
             input.focus()
+        } else {
+            alert("Пустое поле!")
         }
     }
 }
-
 function deleteTask(e) {
     e.preventDefault()
     const btn = e.target

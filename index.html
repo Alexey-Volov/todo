@@ -9,19 +9,20 @@
     <title>TODO</title>
 </head>
 <body>
-    <form class="todo" id="form">
-        <div class="todo__wrapper">
-            <input class="input" id="input" type="text" placeholder="Введите текст задачи">
+    <div class="bg">
+        <h1>TODO APP</h1>
+        <form class="todo" id="form">
+            <div class="todo__wrapper">
+                <input maxlength="25" class="input" id="input" type="text" placeholder="Введите текст задачи">
+        
+                <button data-btn="add" class="btn" id="btn">Отправить</button>
+                <ul id="tasks">
+
+                </ul>
+            </div>
+        </form>
+    </div>
     
-            <button data-btn="add" class="btn" id="btn">Отправить</button>
-            <ul id="tasks">
-                <li class="task">
-                    <p class="task__text">task text</p>
-                    <button data-del="del" class="btnDel" id="btnDelete">Delete Task</button>
-                </li>
-            </ul>
-        </div>
-    </form>
     
     
     <script src="./main.js"></script>
